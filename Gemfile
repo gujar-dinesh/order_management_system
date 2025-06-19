@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.2.2", ">= 7.2.2.1"
+gem "rails", "~> 7.1.2"
 # Use sqlite3 as the database for Active Record
 # gem "sqlite3", ">= 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
@@ -33,8 +33,18 @@ gem 'pg', '~> 1.5', '>= 1.5.9'
 # API Support
 gem 'jbuilder', '~> 2.11'     # JSON responses
 
-# Event Dispatcher (Kafka - for later)
 
+
+gem 'sidekiq'
+gem 'redis'
+
+
+gem 'rails-observers', '~> 0.1.5'
+
+gem 'activerecord-import'
+
+
+gem 'kaminari'
 
 # Background jobs (optional if you use Sidekiq for fallback)
 # gem 'sidekiq'
