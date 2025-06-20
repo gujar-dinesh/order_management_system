@@ -1,8 +1,15 @@
 class OrderObserver < ActiveRecord::Observer
 
+  # def after_create(order)
+  #   InventoryHandlerJob.perform_async(order.id)
+  # end
   def after_create(order)
-    InventoryHandlerJob.perform_async(order.id)
+    Karafka.producer.produce_async(
+      topic: 'inventory',
+      payload: { order_id: order.id }.to_json
+    )
   end
+
 
   def before_update(order)
     return unless order.status_changed? &&

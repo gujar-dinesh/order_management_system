@@ -46,6 +46,11 @@ gem 'activerecord-import'
 
 gem 'kaminari'
 
+# Gemfile
+gem 'karafka'
+# gem 'waterdrop', '~> 2.5'
+
+
 # Background jobs (optional if you use Sidekiq for fallback)
 # gem 'sidekiq'
 # gem 'redis'

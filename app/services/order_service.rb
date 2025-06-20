@@ -36,13 +36,16 @@ class OrderService
       return { data: { error: "Invalid status" }, status: :unprocessable_entity }
     end
 
-    if order.update(status: new_status)
-      Rails.logger.info("[Order Status Updated] Order ##{order.id} status changed to #{new_status}")
-      { data: order, status: :ok }
-    else
-      { data: { errors: order.errors.full_messages }, status: :unprocessable_entity }
-    end
+    # Publish the status update event to Kafka
+    Karafka.producer.produce_async(
+      topic: 'orders',
+      payload: { order_id: order.id, new_status: new_status }.to_json
+    )
+
+    { data: { message: "Order update event published", order_id: order.id }, status: :accepted }
   end
+
+
 
   def self.cancel_order(id)
     order = Order.find_by(id: id)
