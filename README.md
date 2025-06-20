@@ -1,13 +1,21 @@
 # Order Management System (OMS)
 
+<<<<<<< Updated upstream
 This is a lightweight, event-aware order management system built with Ruby on Rails, Kafka, Karafka, Sidekiq, Redis, and PostgreSQL. Orders and inventory are processed asynchronously using Kafka topics, and PgBouncer is used for PostgreSQL connection pooling.
+=======
+This is a lightweight, event-aware order management system built with Ruby on Rails, Kafka, Karafka, Redis, and PostgreSQL. Inventory and order logic are handled asynchronously via Kafka topics. PgBouncer is used for PostgreSQL connection pooling.
+>>>>>>> Stashed changes
 
 ## Features
 
 * Place and manage orders
 * Inventory deduction and restoration
+<<<<<<< Updated upstream
 * Event-driven architecture with Kafka + Karafka
 * Background processing with Sidekiq
+=======
+* Event-driven processing with Kafka + Karafka
+>>>>>>> Stashed changes
 * PgBouncer for DB pooling
 * Load testing via custom simulator
 * Fully containerized with Docker Compose
@@ -57,12 +65,20 @@ docker-compose up
 This spins up:
 
 * `web`: Rails API
+<<<<<<< Updated upstream
 * `sidekiq`: Background job processor
 * `karafka`: Karafka consumer server
 * `kafka`: Kafka broker
 * `zookeeper`: Required for Kafka
 * `redis`: For Sidekiq queues
 * `db`: PostgreSQL
+=======
+* `karafka`: Kafka consumer service
+* `kafka`: Kafka broker
+* `zookeeper`: Required by Kafka
+* `db`: PostgreSQL
+* `redis`: Used for caching or pub/sub if needed
+>>>>>>> Stashed changes
 * `pgbouncer`: Connection pooler on port 6432
 
 ---
@@ -80,7 +96,11 @@ This spins up:
 * `PUT    /inventory_items/:id` — Update inventory item
 * `DELETE /inventory_items/:id` — Delete inventory item
 
+<<<<<<< Updated upstream
 Access API via: `http://localhost:3000`
+=======
+API available at: `http://localhost:3000`
+>>>>>>> Stashed changes
 
 ### Rails console
 
@@ -94,6 +114,7 @@ docker-compose exec web rails console
 
 **Published Events:**
 
+<<<<<<< Updated upstream
 * `inventory` topic (from order observer):
 
 ```ruby
@@ -129,6 +150,26 @@ bundle exec karafka server
 
 Docker version runs it via `karafka` service automatically.
 
+=======
+* `inventory` topic: triggered when an order is created to reserve inventory
+* `orders` topic: triggered when order status is updated (e.g., cancellation)
+
+**Consumed by Karafka:**
+
+* `InventoryConsumer`: attempts to reserve inventory or reject the order
+* `OrderConsumer`: updates order status and rolls back inventory if needed
+
+---
+
+## Running Karafka Manually
+
+You can also run Karafka from inside the container:
+
+```bash
+docker-compose exec karafka bundle exec karafka server
+```
+
+>>>>>>> Stashed changes
 ---
 
 ## Run Simulator (Load Testing)
@@ -188,7 +229,11 @@ open coverage/index.html  # or xdg-open on Linux
   docker-compose exec db psql -U dinesh oms_development
   ```
 
+<<<<<<< Updated upstream
 * Karafka server (manually):
+=======
+* Karafka server (manual run):
+>>>>>>> Stashed changes
 
   ```bash
   docker-compose exec karafka bundle exec karafka server
