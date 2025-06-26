@@ -169,7 +169,6 @@ You can also run Karafka from inside the container:
 docker-compose exec karafka bundle exec karafka server
 ```
 
->>>>>>> Stashed changes
 ---
 
 ## Run Simulator (Load Testing)
@@ -187,7 +186,7 @@ docker-compose up
 From your host machine:
 
 ```bash
-k6 run test/load_test.js
+k6 run test/request_sim.py
 ```
 
 You can modify `vus`, `duration`, and test logic in `load_test.js`.
@@ -229,11 +228,9 @@ open coverage/index.html  # or xdg-open on Linux
   docker-compose exec db psql -U dinesh oms_development
   ```
 
-<<<<<<< Updated upstream
-* Karafka server (manually):
-=======
+
 * Karafka server (manual run):
->>>>>>> Stashed changes
+
 
   ```bash
   docker-compose exec karafka bundle exec karafka server

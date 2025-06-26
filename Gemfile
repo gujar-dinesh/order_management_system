@@ -49,6 +49,7 @@ gem 'kaminari'
 # Gemfile
 gem 'karafka'
 # gem 'waterdrop', '~> 2.5'
+gem 'ruby-kafka'
 
 
 # Background jobs (optional if you use Sidekiq for fallback)

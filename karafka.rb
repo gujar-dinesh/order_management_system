@@ -26,14 +26,4 @@ class KarafkaApp < Karafka::App
       log_messages: false
     )
   )
-
-  routes.draw do
-    topic :orders do
-      consumer OrderConsumer
-    end
-
-    topic :inventory do
-      consumer InventoryConsumer
-    end
-  end
 end

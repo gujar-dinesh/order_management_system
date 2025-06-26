@@ -1,13 +1,14 @@
+require_relative '../../lib/kafka_producer'
 class OrderObserver < ActiveRecord::Observer
 
   # def after_create(order)
   #   InventoryHandlerJob.perform_async(order.id)
   # end
   def after_create(order)
-    Karafka.producer.produce_async(
-      topic: 'inventory',
-      payload: { order_id: order.id }.to_json
-    )
+    producer = KafkaProducer.new
+    producer.publish('inventory', { order_id: order.id }.to_json)
+
+    puts "Event published!"
   end
 
 
