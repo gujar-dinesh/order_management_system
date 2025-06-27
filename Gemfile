@@ -51,6 +51,7 @@ gem 'karafka'
 # gem 'waterdrop', '~> 2.5'
 gem 'ruby-kafka'
 
+gem 'digest-crc'
 
 # Background jobs (optional if you use Sidekiq for fallback)
 # gem 'sidekiq'

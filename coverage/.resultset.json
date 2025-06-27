@@ -1,0 +1,591 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/dinesh/netpractice/order_management_system/karafka.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ],
+        "branches": {}
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/consumers/order_consumer.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null
+        ],
+        "branches": {
+          "[:unless, 0, 12, 4, 12, 40]": {
+            "[:else, 1, 12, 4, 12, 40]": 0,
+            "[:then, 2, 12, 4, 12, 10]": 0
+          },
+          "[:unless, 3, 15, 4, 15, 23]": {
+            "[:else, 4, 15, 4, 15, 23]": 0,
+            "[:then, 5, 15, 4, 15, 10]": 0
+          },
+          "[:if, 6, 18, 4, 18, 43]": {
+            "[:then, 7, 18, 4, 18, 10]": 0,
+            "[:else, 8, 18, 4, 18, 43]": 0
+          },
+          "[:if, 9, 26, 10, 26, 52]": {
+            "[:then, 10, 26, 10, 26, 45]": 0,
+            "[:else, 11, 26, 10, 26, 52]": 0
+          },
+          "[:if, 12, 23, 6, 28, 9]": {
+            "[:then, 13, 24, 8, 27, 11]": 0,
+            "[:else, 14, 23, 6, 28, 9]": 0
+          },
+          "[:case, 15, 37, 4, 44, 7]": {
+            "[:when, 16, 39, 6, 39, 32]": 0,
+            "[:when, 17, 41, 6, 41, 20]": 0,
+            "[:else, 18, 43, 6, 43, 23]": 0
+          }
+        }
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/consumers/application_consumer.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null
+        ],
+        "branches": {}
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/consumers/inventory_consumer.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null
+        ],
+        "branches": {
+          "[:unless, 0, 12, 4, 12, 26]": {
+            "[:else, 1, 12, 4, 12, 26]": 0,
+            "[:then, 2, 12, 4, 12, 10]": 0
+          },
+          "[:unless, 3, 15, 4, 15, 52]": {
+            "[:else, 4, 15, 4, 15, 52]": 0,
+            "[:then, 5, 15, 4, 15, 10]": 0
+          },
+          "[:\"&.\", 6, 25, 8, 25, 38]": {
+            "[:then, 7, 25, 8, 25, 38]": 0,
+            "[:else, 8, 25, 8, 25, 38]": 0
+          },
+          "[:if, 9, 28, 6, 36, 9]": {
+            "[:then, 10, 29, 8, 33, 42]": 0,
+            "[:else, 11, 35, 8, 35, 41]": 0
+          },
+          "[:case, 12, 47, 4, 54, 7]": {
+            "[:when, 13, 49, 6, 49, 37]": 0,
+            "[:when, 14, 51, 6, 51, 25]": 0,
+            "[:else, 15, 47, 4, 54, 7]": 0
+          }
+        }
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/models/order_observer.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null
+        ],
+        "branches": {
+          "[:unless, 0, 15, 4, 17, 37]": {
+            "[:else, 1, 15, 4, 17, 37]": 0,
+            "[:then, 2, 15, 4, 15, 10]": 0
+          },
+          "[:if, 3, 21, 6, 21, 48]": {
+            "[:then, 4, 21, 6, 21, 41]": 0,
+            "[:else, 5, 21, 6, 21, 48]": 0
+          }
+        }
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/models/order.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ],
+        "branches": {}
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ],
+        "branches": {}
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/services/order_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null
+        ],
+        "branches": {
+          "[:unless, 0, 4, 4, 4, 80]": {
+            "[:else, 1, 4, 4, 4, 80]": 0,
+            "[:then, 2, 4, 4, 4, 68]": 1
+          },
+          "[:unless, 3, 11, 4, 11, 101]": {
+            "[:else, 4, 11, 4, 11, 101]": 0,
+            "[:then, 5, 11, 4, 11, 68]": 1
+          },
+          "[:if, 6, 15, 4, 21, 7]": {
+            "[:then, 7, 18, 6, 18, 39]": 0,
+            "[:else, 8, 20, 6, 20, 85]": 0
+          },
+          "[:unless, 9, 26, 4, 26, 82]": {
+            "[:else, 10, 26, 4, 26, 82]": 0,
+            "[:then, 11, 26, 4, 26, 69]": 1
+          },
+          "[:unless, 12, 33, 4, 33, 82]": {
+            "[:else, 13, 33, 4, 33, 82]": 0,
+            "[:then, 14, 33, 4, 33, 69]": 1
+          },
+          "[:unless, 15, 35, 4, 37, 7]": {
+            "[:else, 16, 35, 4, 37, 7]": 0,
+            "[:then, 17, 36, 6, 36, 81]": 0
+          },
+          "[:unless, 18, 52, 4, 52, 82]": {
+            "[:else, 19, 52, 4, 52, 82]": 0,
+            "[:then, 20, 52, 4, 52, 69]": 1
+          },
+          "[:if, 21, 57, 8, 57, 52]": {
+            "[:then, 22, 57, 8, 57, 44]": 0,
+            "[:else, 23, 57, 8, 57, 52]": 0
+          },
+          "[:if, 24, 54, 4, 59, 7]": {
+            "[:then, 25, 55, 6, 58, 9]": 0,
+            "[:else, 26, 54, 4, 59, 7]": 0
+          }
+        }
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/models/user.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
+        "branches": {}
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/consumers/example_consumer.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/controllers/inventory_items_controller.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/controllers/orders_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/Users/dinesh/netpractice/order_management_system/app/models/inventory_item.rb": {
+        "lines": [
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      }
+    },
+    "timestamp": 1750402937
+  }
+}
