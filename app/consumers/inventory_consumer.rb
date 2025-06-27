@@ -11,14 +11,14 @@ class InventoryConsumer < ApplicationConsumer
     order_id = extract_order_id(payload)
     return unless order_id
 
-    order = Order.find_by(id: order_id)
+    order = Order.select(:items, :status).find_by(id: order_id)
     return unless order && order.status == "Pending"
 
     items = order.items
 
     ActiveRecord::Base.transaction do
       # Lock relevant inventory rows
-      inventory = InventoryItem.where(name: items.keys).lock(true).index_by(&:name)
+      inventory = InventoryItem.select(:name, :quantity).where(name: items.keys).lock(true).index_by(&:name)
 
       # Check if inventory is sufficient
       can_fulfill = !items.any? do |item_name, quantity|
