@@ -31,7 +31,7 @@ gem "bootsnap", require: false
 gem 'pg', '~> 1.5', '>= 1.5.9'
 
 # API Support
-gem 'jbuilder', '~> 2.11'     # JSON responses
+gem 'jbuilder', '~> 2.14'     # JSON responses
 
 
 
